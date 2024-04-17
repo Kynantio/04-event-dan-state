@@ -8,6 +8,20 @@ export function Tombol_2({isiPesan, namaTombol}: any){
     );
 }
 
+export function Tombol_3({isiPesan, namaTombol}: any){
+    return(
+      <button 
+      className="bg-green-400 hover:bg-green-700 text-white p-2 roun m-2"
+      onClick={(e)=>{
+        e.stopPropagation();
+        alert(isiPesan)
+      }
+      }>
+        {namaTombol}
+      </button>
+    );
+}
+
 export function Tombol_1() {
     function handleClick(){
         alert("Tombol telah ditekan");
